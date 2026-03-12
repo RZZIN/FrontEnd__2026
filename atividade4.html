@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="cyberpunk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arquivo Confuso da Computação – Edição DaisyUI Completa</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    pre { background: #0f0f23; color: #ff79c6; font-family: monospace; padding: 1rem; border-radius: 0.5rem; }
+    .timeline-middle { background: #ff79c6 !important; color: #000; }
+    img { max-height: 300px; object-fit: contain; }
+  </style>
+</head>
+
+<body class="min-h-screen bg-base-100">
+
+<div class="drawer">
+  <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content flex flex-col">
+
+    <!-- Navbar -->
+    <div class="navbar bg-base-900 sticky top-0 z-50 shadow-lg">
+      <div class="flex-1">
+        <label for="my-drawer" class="btn btn-square btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </label>
+        <a class="btn btn-ghost text-xl text-primary">Arquivo Confuso</a>
+      </div>
+      <div class="flex-none hidden lg:block">
+        <ul class="menu menu-horizontal px-1 gap-2">
+          <li><a href="#pioneiros">Pioneiros</a></li>
+          <li><a href="#bugs">Bugs</a></li>
+          <li><a href="#internet">Internet</a></li>
+          <li><a href="#linguagens">Linguagens</a></li>
+          <li><a href="#timeline">Linha do Tempo</a></li>
+          <li><a href="#fatos-inuteis">Fatos Inúteis</a></li>
+          <li><a href="#form">Envie algo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero min-h-[40vh] bg-base-200">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center">
+        <div class="max-w-4xl">
+          <h1 class="mb-5 text-5xl font-bold text-primary">Arquivo (Quase) Perdido da Ciência da Computação</h1>
+          <p class="mb-5 text-xl">Bugs literais, vírus pioneiros, fatos absurdos e história caótica da tecnologia.</p>
+        </div>
+      </div>
+    </div>
+
+    <main class="container mx-auto px-4 py-12">
+
+      <!-- Pioneiros (já com imagens) -->
+      <section id="pioneiros" class="mb-20">
+        <h2 class="text-4xl font-bold text-center mb-10 text-primary">Pioneiros Esquecidos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="card bg-base-300 shadow-xl">
+            <div class="card-body items-center text-center">
+              <img src="https://media.newyorker.com/photos/64123041652f9d9fe976fff0/4:3/w_1779,h_1334,c_limit/ra1146.jpg" alt="Ada Lovelace" class="rounded-3xl shadow-2xl mb-6">
+              <h3 class="card-title text-2xl text-secondary">Ada Lovelace</h3>
+              <div class="badge badge-primary">Primeira programadora</div>
+              <p class="mt-3">Algoritmo para Máquina Analítica (1840s).</p>
+            </div>
+          </div>
+          <div class="card bg-base-300 shadow-xl">
+            <div class="card-body items-center text-center">
+              <img src="https://images.squarespace-cdn.com/content/v1/656f4639c770ec629203bdbe/8dfbb04b-5d2e-469d-aa79-04dc99a5f6cf/alan-turing-and-turing-machine.jpg">
+              <h3 class="card-title text-2xl text-secondary">Alan Turing</h3>
+              <div class="badge badge-accent">Máquina de Turing</div>
+              <blockquote class="mt-3 italic opacity-80">"Podemos ver apenas um pouco do futuro..."</blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bugs (já completo) -->
+      <section id="bugs" class="mb-20">
+        <h2 class="text-4xl font-bold text-center mb-10 text-primary">Histórias de Bugs e Vírus Pioneiros</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="card bg-base-300 shadow-xl">
+            <div class="card-body">
+              <img src="https://3.bp.blogspot.com/-S385EOFa8-o/WTliEKzQwTI/AAAAAAAAF4M/9Gaxmnj-GPo6CUShrEm1v5-AroPyr_2nQCLcB/s1600/bug_mariposa1.jpg">
+              <h3 class="card-title text-secondary">O Primeiro Bug Real (1947)</h3>
+              <p>Uma mariposa presa nos relés do Harvard Mark II causou falha. Grace Hopper colou o inseto no log.</p>
+              <div class="alert alert-info mt-4 text-sm">
+                <span>O log original está preservado no Smithsonian até hoje!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-300 shadow-xl">
+            <div class="card-body">
+              <img src="https://i.ytimg.com/vi/_RAluGMmcOc/maxresdefault.jpg">
+              <h3 class="card-title text-secondary">Vírus Creeper (1971)</h3>
+              <p>O primeiro worm da história, criado por Bob Thomas. Inofensivo, mas exibiu a mensagem icônica:</p>
+              <pre class="mt-3">
+I'M THE CREEPER : CATCH ME IF YOU CAN
+              </pre>
+              <div class="badge badge-warning mt-3">Inspirado em Scooby-Doo</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Curiosidades da Internet (nova seção completa) -->
+      <section id="internet" class="mb-20">
+        <h2 class="text-4xl font-bold text-center mb-10 text-primary">Curiosidades da Internet</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div class="card bg-base-200 shadow-xl">
+            <div class="card-body">
+              <h3 class="card-title text-secondary">Primeiro Website (1991)</h3>
+              <img src="https://tse3.mm.bing.net/th/id/OIP.PsYTgbNl5tm2xKxIGYI7ZQHaEV?pid=Api&h=220&P=0">
+              <p>Criado por Tim Berners-Lee no CERN. Ainda online em <a href="http://info.cern.ch" class="link link-primary" target="_blank">info.cern.ch</a>.</p>
+              <div class="badge badge-info mt-2">Texto puro + links</div>
+            </div>
+          </div>
+
+          <div class="card bg-base-200 shadow-xl">
+            <div class="card-body">
+              <h3 class="card-title text-secondary">ARPANET (1969)</h3>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Arpanet_logical_map%2C_march_1977.png" alt="Mapa lógico ARPANET Março 1977" class="rounded-3xl shadow-2xl mb-4 mx-auto">
+              <p>Precursora da internet moderna.</p>
+              <ul class="list-disc list-inside mt-3 text-sm opacity-90">
+                <li>Primeira mensagem: "LO"</li>
+                <li>Sistema caiu antes de completar "LOGIN"</li>
+              </ul>
+              <div class="alert alert-warning mt-4 text-xs">
+                <span>"Lo and behold" – eis que algo incrível acontece!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-200 shadow-xl">
+            <div class="card-body">
+              <h3 class="card-title text-secondary">Emojis e ASCII</h3>
+              <img src="https://androidayuda.com/wp-content/uploads/2018/04/emoticonos-ASCII-muestra-1.jpg">
+              <p>Antes dos emojis gráficos, usávamos texto puro:</p>
+              <div class="flex gap-4 justify-center mt-4 text-3xl">
+                <code class="badge badge-outline badge-success">:-)</code>
+                <code class="badge badge-outline badge-warning">;-)</code>
+                <code class="badge badge-outline badge-error">:-D</code>
+              </div>
+              <p class="text-sm mt-4 opacity-80">O primeiro emoticon :-) foi sugerido por Scott Fahlman em 1982.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Linguagens (mantida) -->
+      <section id="linguagens" class="mb-20">
+        <h2 class="text-4xl font-bold text-center mb-10 text-primary">Linguagens Icônicas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="card bg-base-200 shadow-xl">
+            <div class="card-body">
+              <h3 class="card-title text-secondary">COBOL</h3>
+              <div class="badge badge-outline badge-info mb-2">1959</div>
+              <p>Ainda vivo em bancos e governos.</p>
+            </div>
+          </div>
+          <div class="card bg-base-200 shadow-xl">
+            <div class="card-body">
+              <h3 class="card-title text-secondary">C</h3>
+              <div class="badge badge-outline badge-success mb-2">1972</div>
+              <p>Base de sistemas operacionais modernos.</p>
+            </div>
+          </div>
+          <div class="card bg-base-200 shadow-xl">
+            <div class="card-body">
+              <h3 class="card-title text-secondary">Python</h3>
+              <div class="badge badge-outline badge-warning mb-2">1991</div>
+              <p>Rei da IA, dados e simplicidade.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Linha do Tempo (expandida com internet) -->
+      <!-- Linha do Tempo – Versão Completa e Expandida -->
+<section id="timeline" class="mb-24">
+  <h2 class="text-5xl font-bold text-center mb-16 text-primary drop-shadow-lg">
+    Linha do Tempo do Caos Digital
+  </h2>
+
+  <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+
+    <!-- 1837–1843: Máquina Analítica + Lovelace -->
+    <li>
+      <hr class="bg-primary" />
+      <div class="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-base-100">
+          <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zm0 15a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25a.75.75 0 01.75-.75zm-8.25-9a.75.75 0 01.75-.75h15a.75.75 0 010 1.5H4.5a.75.75 0 01-.75-.75zm0 6a.75.75 0 01.75-.75h15a.75.75 0 010 1.5H4.5a.75.75 0 01-.75-.75z" />
+        </svg>
+      </div>
+      <div class="timeline-end mb-10 md:mb-0">
+        <time class="font-mono italic text-lg">1837–1843</time>
+        <div class="text-xl font-black text-secondary">Máquina Analítica + Primeiro Algoritmo</div>
+        <p class="mt-2 opacity-90">Charles Babbage projeta a primeira máquina programável. Ada Lovelace escreve o primeiro algoritmo e prevê que máquinas fariam música e arte.</p>
+      </div>
+      <hr class="bg-primary" />
+    </li>
+
+    <!-- 1945: ENIAC -->
+    <li>
+      <hr class="bg-primary" />
+      <div class="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-base-100">
+          <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12 18.75a.75.75 0 01-.75-.75v-6a.75.75 0 011.5 0v6a.75.75 0 01-.75.75zm.75-9.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+        </svg>
+      </div>
+      <div class="timeline-start md:text-end mb-10">
+        <time class="font-mono italic text-lg">1945</time>
+        <div class="text-xl font-black text-secondary">ENIAC – Primeiro Computador Eletrônico Geral</div>
+        <p class="mt-2 opacity-90">30 toneladas, 18.000 válvulas, ocupava uma sala inteira. Usado para cálculos balísticos na WWII.</p>
+      </div>
+      <hr class="bg-primary" />
+    </li>
+
+    <!-- 1947: Primeiro Bug -->
+    <li>
+      <hr class="bg-primary" />
+      <div class="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-base-100">
+          <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12 18.75a.75.75 0 01-.75-.75v-6a.75.75 0 011.5 0v6a.75.75 0 01-.75.75zm.75-9.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+        </svg>
+      </div>
+      <div class="timeline-end mb-10 md:mb-0">
+        <time class="font-mono italic text-lg">1947</time>
+        <div class="text-xl font-black text-secondary">Primeiro Bug Literal (Mariposa)</div>
+        <p class="mt-2 opacity-90">Mariposa presa no Harvard Mark II. Grace Hopper cola o inseto no log: "First actual case of bug being found".</p>
+      </div>
+      <hr class="bg-primary" />
+    </li>
+
+    <!-- 1969: ARPANET -->
+    <li>
+      <hr class="bg-primary" />
+      <div class="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-base-100">
+          <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m18 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m18 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+        </svg>
+      </div>
+      <div class="timeline-start md:text-end mb-10">
+        <time class="font-mono italic text-lg">1969</time>
+        <div class="text-xl font-black text-secondary">ARPANET – Nascimento da Internet</div>
+        <p class="mt-2 opacity-90">Primeira mensagem: "LO" (falha antes de completar "LOGIN"). "Lo and behold" – eis que a rede nasce!</p>
+      </div>
+      <hr class="bg-primary" />
+    </li>
+
+    <!-- 1971: Creeper -->
+    <li>
+      <hr class="bg-primary" />
+      <div class="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-base-100">
+          <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12 18.75a.75.75 0 01-.75-.75v-6a.75.75 0 011.5 0v6a.75.75 0 01-.75.75zm.75-9.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+        </svg>
+      </div>
+      <div class="timeline-end mb-10 md:mb-0">
+        <time class="font-mono italic text-lg">1971</time>
+        <div class="text-xl font-black text-secondary">Creeper – Primeiro Vírus/Worm</div>
+        <p class="mt-2 opacity-90">"I'M THE CREEPER : CATCH ME IF YOU CAN" – inofensivo, mas marcou o início da era dos vírus.</p>
+      </div>
+      <hr class="bg-primary" />
+    </li>
+
+    <!-- 1982: Primeiro Emoticon -->
+    <li>
+      <hr class="bg-primary" />
+      <div class="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-base-100">
+          <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12 18.75a.75.75 0 01-.75-.75v-6a.75.75 0 011.5 0v6a.75.75 0 01-.75.75zm.75-9.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+        </svg>
+      </div>
+      <div class="timeline-start md:text-end mb-10">
+        <time class="font-mono italic text-lg">1982</time>
+        <div class="text-xl font-black text-secondary">Primeiro Emoticon :-) </div>
+        <p class="mt-2 opacity-90">Scott Fahlman sugere :-) para indicar piada em fórum universitário. Nasce a era dos emoticons ASCII.</p>
+      </div>
+      <hr class="bg-primary" />
+    </li>
+
+    <!-- 1991: WWW + Python -->
+    <li>
+      <hr class="bg-primary" />
+      <div class="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-base-100">
+          <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m18 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m18 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+        </svg>
+      </div>
+      <div class="timeline-end mb-10 md:mb-0">
+        <time class="font-mono italic text-lg">1991</time>
+        <div class="text-xl font-black text-secondary">World Wide Web + Python nasce</div>
+        <p class="mt-2 opacity-90">Tim Berners-Lee publica o primeiro site (info.cern.ch). Guido van Rossum lança Python 0.9.0.</p>
+      </div>
+      <hr class="bg-primary" />
+    </li>
+
+    <!-- 1996: Ariane 5 -->
+    <li>
+      <hr class="bg-primary" />
+      <div class="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-base-100">
+          <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12 18.75a.75.75 0 01-.75-.75v-6a.75.75 0 011.5 0v6a.75.75 0 01-.75.75zm.75-9.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+        </svg>
+      </div>
+      <div class="timeline-start md:text-end mb-10">
+        <time class="font-mono italic text-lg">1996</time>
+        <div class="text-xl font-black text-secondary">Ariane 5 explode por bug de conversão</div>
+        <p class="mt-2 opacity-90">Conversão errada de 64-bit para 16-bit causa falha em 37 segundos. Custo: ~370 milhões de dólares.</p>
+      </div>
+      <hr class="bg-primary" />
+    </li>
+
+    <!-- 1999–2000: Y2K -->
+    <li>
+      <hr class="bg-primary" />
+      <div class="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-base-100">
+          <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12 18.75a.75.75 0 01-.75-.75v-6a.75.75 0 011.5 0v6a.75.75 0 01-.75.75zm.75-9.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+        </svg>
+      </div>
+      <div class="timeline-end mb-10 md:mb-0">
+        <time class="font-mono italic text-lg">1999–2000</time>
+        <div class="text-xl font-black text-secondary">Bug do Milênio (Y2K)</div>
+        <p class="mt-2 opacity-90">Dois dígitos para ano → "00" poderia ser 1900. Gastos globais: bilhões. Quase nada aconteceu.</p>
+      </div>
+      <hr class="bg-primary" />
+    </li>
+
+    <!-- 2009: Google quebra a internet -->
+    <li>
+      <hr class="bg-primary" />
+      <div class="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-base-100">
+          <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12 18.75a.75.75 0 01-.75-.75v-6a.75.75 0 011.5 0v6a.75.75 0 01-.75.75zm.75-9.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+        </svg>
+      </div>
+      <div class="timeline-start md:text-end mb-10">
+        <time class="font-mono italic text-lg">2009</time>
+        <div class="text-xl font-black text-secondary">Google marca toda a internet como maliciosa</div>
+        <p class="mt-2 opacity-90">Por 40 minutos, o Google disse que todos os sites eram perigosos. Caos global instantâneo.</p>
+      </div>
+      <hr class="bg-primary" />
+    </li>
+
+    <!-- 2010+: Era moderna -->
+    <li>
+      <hr class="bg-primary" />
+      <div class="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-base-100">
+          <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m18 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m18 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+        </svg>
+      </div>
+      <div class="timeline-end">
+        <time class="font-mono italic text-lg">2010+</time>
+        <div class="text-xl font-black text-secondary">Era dos Smartphones + IA + Blockchain</div>
+        <p class="mt-2 opacity-90">iPhone (2007), Bitcoin (2009), explosão de redes sociais, deep learning e IA generativa mudam tudo novamente.</p>
+      </div>
+    </li>
+
+  </ul>
+</section>
+      <!-- Fatos Inúteis -->
+      <section id="fatos-inuteis" class="mb-20">
+        <h2 class="text-4xl font-bold text-center mb-10 text-primary">Fatos Inúteis (Mas Incríveis)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="stat bg-base-200 shadow">
+            <div class="stat-figure text-primary"><span class="text-5xl">🍖</span></div>
+            <div class="stat-title">Spam</div>
+            <div class="stat-value text-secondary">Presunto</div>
+            <div class="stat-desc">Do sketch Monty Python (1970).</div>
+          </div>
+          <div class="stat bg-base-200 shadow">
+            <div class="stat-figure text-accent"><span class="text-5xl">🪓</span></div>
+            <div class="stat-title">Bluetooth</div>
+            <div class="stat-value text-info">Viking</div>
+            <div class="stat-desc">Rei Harald Bluetooth.</div>
+          </div>
+          <div class="stat bg-base-200 shadow">
+            <div class="stat-figure text-warning"><span class="text-5xl">🔑</span></div>
+            <div class="stat-title">Senha #1</div>
+            <div class="stat-value text-error">123456</div>
+            <div class="stat-desc">Campeã mundial eterna.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulário -->
+      <section id="form" class="mb-20">
+        <h2 class="text-4xl font-bold text-center mb-10 text-primary">Envie sua Curiosidade / Bug / Fato Inútil</h2>
+        <div class="card bg-base-200 shadow-2xl max-w-2xl mx-auto">
+          <div class="card-body gap-5">
+            <input type="text" placeholder="Seu nome ou hacker name" class="input input-bordered input-primary w-full" />
+            <select class="select select-bordered select-primary w-full">
+              <option disabled selected>Categoria</option>
+              <option>Internet</option>
+              <option>Bugs / Vírus</option>
+              <option>Fatos Inúteis</option>
+              <option>Linguagens</option>
+              <option>Outro caos</option>
+            </select>
+            <textarea class="textarea textarea-bordered textarea-primary h-32" placeholder="Descreva o fato absurdo..."></textarea>
+            <button class="btn btn-primary btn-lg w-full">Enviar para o caos eterno</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer footer-center p-10 bg-base-300 text-base-content">
+      <div>
+        <p class="font-bold text-primary">Arquivo Confuso da Computação © 2026</p>
+        <p>Feito com DaisyUI + neon + bugs reais</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Drawer mobile -->
+  <div class="drawer-side">
+    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+      <li class="menu-title text-xl text-primary mb-4">Menu</li>
+      <li><a href="#pioneiros">Pioneiros</a></li>
+      <li><a href="#bugs">Bugs</a></li>
+      <li><a href="#internet">Internet</a></li>
+      <li><a href="#linguagens">Linguagens</a></li>
+      <li><a href="#timeline">Linha do Tempo</a></li>
+      <li><a href="#fatos-inuteis">Fatos Inúteis</a></li>
+      <li><a href="#form">Envie algo</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
