@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogadores</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        #jogadores {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 220px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        img {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Jogadores</h1>
+
+    <button onclick="add()">Adicionar jogador</button>
+
+    <!-- ESSA DIV É O MAIS IMPORTANTE -->
+    <div id="jogadores"></div>
+
+    <script>
+        function add(){
+
+            const container = document.getElementById("jogadores");
+
+            const novo = document.createElement("div");
+            novo.className = "card";
+
+            novo.innerHTML = `
+                <img src="_vinicius_junior.png" width="100%">
+                <p><strong>Nome:</strong> Vinícius José Paixão de Oliveira Júnior </p>
+                <p><strong>Nascimento:</strong> 12/07/2000</p>
+                <p><strong>Altura:</strong> 1,76m</p>
+                <p><strong>Posição:</strong> Atacante</p>
+                <p><strong>Rank:</strong> 9.8</p>
+            `;
+
+            container.appendChild(novo);
+        }
+    </script>
+
+</body>
+</html>
